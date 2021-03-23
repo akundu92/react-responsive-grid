@@ -1,0 +1,58 @@
+.card {
+  //this defines what 1 rem is
+  font-size: 200%;
+  flex-basis: 30rem;
+  margin: 2rem;
+  height: 45rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  box-shadow: 5px 5px 9px -3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px 9px -3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px 9px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+
+  &__content {
+    padding: 1.5rem;
+    padding-top: 15rem;
+  }
+
+  &__type {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: grey;
+  }
+
+  &__country {
+    padding-top: 1rem;
+    font-size: 18px;
+    color: grey;
+  }
+
+  &__tagline {
+    padding-top: 1rem;
+    font-weight: 600;
+    font-size: 3.5rem;
+  }
+
+  &--image {
+    .card__image {
+      object-fit: cover;
+      border-radius: 7px 7px 0 0;
+      height: 45%;
+      width: 100%;
+    }
+    .card__tagline {
+      font-size: 2.5rem;
+    }
+
+    .card__content {
+      padding: 1.5rem;
+    }
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:focus {
+    transform: scale(1.1);
+  }
+}
